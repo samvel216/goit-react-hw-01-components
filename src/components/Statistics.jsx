@@ -3,17 +3,17 @@ export const Statistics = ({title, stats}) => {
   console.log(title);
   console.log(typeof title);
 return (
-<section class= {styles.statistics}>
-  <div class = {styles.listContainer}>
+<section className= {styles.statistics}>
+  <div className = {styles.listContainer}>
     {title !== undefined && (
-        <h2 class={styles.titl}>{title}</h2>
+        <h2 className={styles.titl}>{title}</h2>
     )}
-  <ul class= {styles.statList}>
+  <ul className= {styles.statList}>
   
   {stats.map(stat => 
-  (<li class={styles.item} key= {stat.id}>
-   <span class={styles.label}>{stat.label}</span>
-   <span class={styles.percentage}>{stat.percentage}</span>
+  (<li className={styles.item} key= {stat.id}>
+   <span className={styles.label}>{stat.label}</span>
+   <span className={styles.percentage}>{stat.percentage}</span>
  </li>
   ))}
   </ul>
