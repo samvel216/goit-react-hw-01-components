@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://samvel216.github.io/react-homework-template",
+  "homepage": "https://samvel216.github.io/goit-react-hw-01-components",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/react-homework-template.git"
+    "url": "git+https://github.com/goitacademy/goit-react-hw-01-components.git"
   },
   "scripts": {
     "start": "react-scripts start",
