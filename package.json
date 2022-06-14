@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/goit-react-hw-01-components.git"
+    "url": "git+https://github.com/goitacademy/react-homework-template.git"
   },
   "scripts": {
     "start": "react-scripts start",
