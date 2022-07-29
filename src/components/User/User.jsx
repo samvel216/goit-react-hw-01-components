@@ -1,4 +1,5 @@
-import styles from '../css/User.module.css';
+import styles from './User.module.css';
+import PropTypes from 'prop-types';
 export const User = ({username, tag, location, avatar, stats }) => {
 return (
     <div className = {styles.profile}>
@@ -33,3 +34,10 @@ return (
 </div>
 );
 };
+User.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.object
+}

@@ -1,4 +1,5 @@
-import styles from '../css/Transaction.module.css';
+import styles from './Transaction.module.css';
+import PropTypes from 'prop-types';
 export const Transaction = ({items}) => {
 return (
     <table className= {styles.transactionHistory}>
@@ -10,15 +11,18 @@ return (
     </tr>
   </thead>
   <tbody className={styles.transactionTbody}>
-  {items.map(element => (
-   <tr key= {element.id} className = {styles.transactionTbodyTr}>
-   <td className= {styles.transactionTd}>{element.type}</td>
-   <td className= {styles.transactionTd}>{element.amount}</td>
-   <td className= {styles.transactionTd}>{element.currency}</td>
+  {items.map(({id,type,amount,currency}) => (
+   <tr key= {id} className = {styles.transactionTbodyTr}>
+   <td className= {styles.transactionTd}>{type}</td>
+   <td className= {styles.transactionTd}>{amount}</td>
+   <td className= {styles.transactionTd}>{currency}</td>
  </tr>
   ))
 }
   </tbody>
 </table>
 )
+}
+Transaction.propTypes = {
+  items: PropTypes.array
 }
